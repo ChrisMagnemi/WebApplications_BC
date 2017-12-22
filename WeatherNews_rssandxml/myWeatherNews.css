@@ -1,0 +1,32 @@
+/* myWeatherNews.css Chris Magnemi*/
+
+body{
+	background-color: lightgreen;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#smileCoffee{
+	float: right;
+	height: 15%;
+	width: 15%;
+	padding-right: 30px;
+}
+
+#WeatherImg,
+#NewsImg{
+	/*float; right;*/
+	/*height: 20%;*/
+	width: 150px;
+	position: relative;
+	margin-right: auto;
+	text-align: right;
+}
+
+#NewsField{
+	overflow: auto;
+	height: 300px;
+}
+
+fieldset{
+	border: 4px groove yellow;
+}
