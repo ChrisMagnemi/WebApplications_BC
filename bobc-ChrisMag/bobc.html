@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" type="text/css" href="bobc.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	 <script type="text/javascript" src="bobc.js"></script>
+     <title>The Best of BC</title>
+</head>
+<body>
+
+	<h1>The Best of Boston College</h1>
+		<form method="GET" action="bobc.html" >
+			<button id="cookieButton" onclick="return hider();" type="submit" style="float: right"> Hide Checked rows </button>
+			<button onclick="return eraseCookie('idc');" style="float:right">Display All rows</button>
+		</form>
+	<form name="SearchForm" onsubmit = "return showResults()" method="GET">
+		Search:  <input id="searchTextbox" type = "text"  /> 
+		 <button id="goFishButton" type = "submit" value="GoFish!"  >Go Fish!</button> 
+	</form>
+
+		<br>
+	
+	<form name="displayAddForm" onSubmit="return displayAddAttractionForm()" method="GET">
+		<button id="addAttractionButton" type = "submit" value = "Add Attraction">Add Attraction</button>   <!-- onclick form appears to collect info to insert an attraction into the database -->
+	</form>
+	
+	<h2> And hereeeEeEeEEeeeeee they are...</h2> 
+<!-- Fieldset containing initial SQL table of everything -->
+<table id="myTable" border="1">
+	<thead>
+	<tr>
+		<th>NAME</th>
+		<th>ENTERED_BY</th>
+		<th>CATEGORY</th>
+		<th>STARS</th>
+		<th>PRICE_RANGE</th>
+		<th>URL/COMMENT</th>
+		<!-- <th style="disply: none">ATTRACTION ID</th> -->
+	</tr>
+	</thead>
+	<tbody>
+	</tbody>
+</table>
+<!-- End initial fieldset containing initial SQL table -->
+
+<!-- HIDDEN DIV UNTIL ADD ATTRACTION FORM SUBMISSION -->
+	<div id="attractionDivPopUp">
+		
+		<fieldset id = "popUpFieldset"> <legend>Enter Attraction Information</legend>
+			<form method="GET" onsubmit="return validateForm()" action="include/insertAttraction.php" >
+				<button onclick="return hideAddAttractionForm()" style="float: right" value="Hide Form">Hide Form</button> <!-- Hides this AddAttractionForm --> <br>
+				<label>Name:</label> <input name="name" id="name" type="text" class="popUpFormElements" /> <div ID="nameDiv"></div><br>
+				<label>Category:</label> <input name="category" id="category" type="text" class="popUpFormElements" /><div ID="categoryDiv"></div> <br>
+				<label>Rating:</label> <select name="rating" id="rating" class="popUpFormElements">
+							<option value="-"> - </option>
+							<option value="*">*</option>
+							<option value="**">**</option>
+							<option value="***">***</option>
+							<option value="****">****</option>
+							<option value="*****">*****</option>
+						</select> <div ID="ratingDiv"></div>  <br>
+				<label>Price:</label> <select name="price" id="price" class="popUpFormElements">
+							<option value="-"> - </option>
+							<option value="$">$</option>
+							<option value="$$">$$</option>
+							<option value="$$$">$$$</option>
+							<option value="$$$$">$$$$</option>
+							<option value="$$$$$">$$$$$</option>
+						</select> <div ID="priceDiv"></div>  <br>
+				<label>Entered By:</label> <input name="entered_by" id="entered_by" type="text" class="popUpFormElements" /><div ID="enteredDiv"></div> <br>
+				<label>URL:</label> <input name="url" id= "url" type="text" class="popUpFormElements"/> <div ID="urlDiv"></div><br>
+				<label>Phone:</label> <input name="phone" id="phone" type="text" class="popUpFormElements"/> <div ID="phoneDiv"></div><br>
+				<label>Address:</label> <input name="address" id="address" type="text" class="popUpFormElements"/> <div ID="addressDiv"></div><br>
+				<label>Comments:</label>  <div ID="commentsDiv"></div><br>
+				<textarea name="comment" id="comments"> </textarea>  <br>
+
+				
+
+				<button id="addThisAttractionButton" type="submit" value="Add This Attraction" style="float: right">Add This Attraction</button>
+		</form>
+
+		</fieldset>
+	</div>
+<!-- END HIDDEN DIV -->
+
+</body>
+</html>
