@@ -1,0 +1,19 @@
+body {
+
+ 
+ background-image: url("/Users/ChrisMagnemi/Documents/'16 spring/Wapps/WApps_hw2/hw2_Myliquid.jpg");
+ 	background-repeat: repeat-y;
+    background-position: right top;
+    background-attachment: fixed;
+background-color: aquamarine;
+
+}
+
+h1 {
+color: blue;
+}
+
+fieldset {
+	background-color: turquoise;
+
+}

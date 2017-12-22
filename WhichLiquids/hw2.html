@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" type="text/css" href="hw2_css.css">
+     <title>We will find the most popular liquid!!!</title>
+     
+         
+</head>
+<body>
+
+<h1> Which liquids do you like?</h1>
+
+
+<form action="http://cscilab.bc.edu/~turinga/hw2/hw2action.php" method="post">
+
+<input type="hidden" name="recipient" value="magnemi@bc.edu">
+<input type="hidden" name="subject" value="Liquids poll">
+
+	<div> <fieldset>
+		<legend>We need some information first just to make sure you are not a robot.</legend>
+		Name:<input type="text" name="Name" required><br>
+		Credit Card Number:<input type="text" name="Credit Card Number" required><br>
+		Social Security Number:<input type="text" name="Social Security Number" required ><br>
+		Address:<input type="text" name="Address"><br>
+		
+		Now please give us some of your personal information, the kind of<br>
+		information you would use for security questions!<br>
+		<textarea name="personal information" rows="4" cols="50">
+		
+		</textarea>
+		</fieldset>
+	</div>
+
+	<div>
+		<h3> Pick some liquids!</h3>
+		<input type="checkbox" name="liquids picked" value="Water">Water<br>
+		<input type="checkbox" name="liquids picked" value="Salt Water">Salt Water<br>
+		<input type="checkbox" name="liquids picked" value="Sugar Water">Sugar Water<br>
+		<input type="checkbox" name="liquids picked" value="Petroleum">Petroleum<br>
+		<input type="checkbox" name="liquids picked" value="Milk">Milk<br>
+		<input type="checkbox" name="liquids picked" value="lava">Lava<br>
+		<input type="checkbox" name="liquids picked" value="Hydrochloric Acid">Hydrochloric Acid<br>
+		<input type="checkbox" name="liquids picked" value="Isopropyl Alcohol">Isopropyl Alcohol<br>
+		<input type="checkbox" name="liquids picked" value="orange Juice">Orange Juice<br>
+	</div>
+	
+	<br>
+	<br>
+	
+	<div>
+		<h3> How liquidy do you prefer your liquids to be? </h3>
+		<input type="radio" name="How liquidy" value="super liquidy" > super liquidy<br>
+  		<input type="radio" name="How liquidy" value="Above Average liquidness"> Above Average liquidity<br>
+  		<input type="radio" name="How liquidy" value="standard liquidy-ness"> Standard liquidy-ness<br>
+  		<input type="radio" name="How liquidy" value="A bit viscous"> A bit viscous<br>
+  		<input type="radio" name="How liquidy" value="More viscous"> More viscous<br>
+  		<input type="radio" name="How liquidy" value="Actually I prefer pulpy"> Actually I prefer pulpy<br>
+  		<br>
+  		Questions about viscosity? <br>
+  		Click this Image:
+  		<br>
+  		<a href="http://www.vp-scientific.com/Viscosity_Tables.htm">
+  		<img src="/Users/ChrisMagnemi/Documents/'16 spring/Wapps/WApps_hw2/Fluid.jpg" style="width:420px;height=420px" >
+  		</a>
+  		
+  	</div>
+  	
+  	<br>
+  	<br>
+  	
+  	<div>
+  		<h3> How much liquid do you use daily?</h3>
+  		<select>
+  			 <option name="Liquid used daily?" value="Lots">Lots</option>
+ 			 <option name="Liquid used daily?" value="Average">Average</option>
+ 			 <option name="Liquid used daily?" value="None is not an option">None is not an option</option>
+ 			 <option name="Liquid used daily?" value="I am made of mostly liquids">I am made of mostly liquids</option>
+		</select>
+  	</div>
+  		
+  		
+	<h3>What about liquids excites you?!? </h3>
+			<textarea name="What about liquids excites you?" rows="4" cols="50">
+		
+			</textarea>
+	<br>
+	
+	
+<input type="reset" value="Reset"><br>	
+<input type="image" src="Submit-Button.png" border="0" alt="Submit" />	
+
+</form>
+
+</body>
+</html>
