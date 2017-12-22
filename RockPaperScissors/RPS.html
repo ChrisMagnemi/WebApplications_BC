@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <script type="text/javascript" src="computermove.js"></script>
+     <link rel="stylesheet" type="text/css" href="RPS.css">
+     <title>Let's Play!</title>
+</head>
+<body>
+
+
+<h1> Let's Play!</h1>
+
+
+<fieldset>
+
+<legend> Choose your object</legend>
+
+<img src="img/RPS.png" align="left" />
+<form method="post" align="right">
+
+	<input type="radio" name="human" value="rock">Rock<br>
+	
+	<input type="radio" name="human" value="paper">Paper<br>
+
+	<input type="radio" name="human" value="scissors">Scissors<br>
+	
+	<br>
+	
+	<input type="button" value="Play!" onClick="return play()">
+
+</form>
+
+</fieldset>
+
+<br>
+<br>
+<br>
+
+<fieldset>
+
+<div id="game">
+</div>
+<div id="image">
+</div>
+</fieldset>
+
+
+
+
+
+</body>
+</html>
