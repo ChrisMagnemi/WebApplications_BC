@@ -1,0 +1,22 @@
+h1 {
+	margin: auto;
+    width: 20%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    color: yellow;
+}
+
+body {
+	background-color: red;
+	/* background-image: url(img/eagle.jpeg); */
+	background-repeat: repeat-y;
+	background-position: right;
+}
+
+fieldset {
+	color: black;
+}
+
+#stats {
+	float: right;
+}

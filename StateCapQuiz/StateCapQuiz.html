@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">`
+<head>
+     <meta charset="utf-8" />
+     <script type="text/javascript" src="StateCapQuiz.js"></script>
+     <link rel="stylesheet" type="text/css" href="StateCapQuiz.css">
+     <title>State Capital Quiz</title>
+</head>
+<body onLoad="return randomState();">
+<h1> State Capital Quiz</h1>
+
+<form method="post">
+<fieldset>
+	<legend>Check these states:</legend>
+
+	<h3 id="statequestion"></h3>
+
+
+	<div id="stats"> 
+		<p id="questions"></p><br>
+		<p id="corrects"></p><br>
+		<p id="wrongs"></p><br>
+		<p id="percent"></p><br> 
+	</div>
+
+
+	<select id="selectmenu" multiple="multiple" size = "10" >
+		<option value="Albany">Albany</option>
+		<br>
+		<option value="Annapolis">Annapolis</option>
+		<br>
+		<option value="Atlanta">Atlanta</option><br>
+		<option value="Augusta">Augusta</option><br>
+		<option value="Austin">Austin</option><br>
+		<option value="Baton Rouge">Baton Rouge</option><br>
+		<option value="Bismarck">Bismarck</option><br>
+		<option value="Boise">Boise</option><br>
+		<option value="Boston">Boston</option><br>
+		<option value="Carson City">Carson City</option><br>
+		<option value="Charleston">Charleston</option><br>
+		<option value="Cheyenne">Cheyenne</option><br>
+		<option value="Columbia">Columbia</option><br>
+		<option value="Columbus">Columbus</option><br>
+		<option value="Concord">Concord</option><br>
+		<option value="Denver">Denver</option><br>
+		<option value="Des Moines">Des Moines</option><br>
+		<option value="Dover">Dover</option><br>
+		<option value="Frankfort">Frankfort</option><br>
+		<option value="Harrisburg">Harrisburg</option><br>
+		<option value="Hartford">Hartford</option><br>
+		<option value="Helena">Helena</option><br>
+		<option value="Honolulu">Honolulu</option><br>
+		<option value="Indianapolis">Indianapolis</option><br>
+		<option value="Jackson">Jackson</option><br>
+		<option value="Jefferson City">Jefferson City</option>
+		<option value="Juneau">Juneau</option>
+		<option value="Lansing">Lansing</option>
+		<option value="Lincoln">Lincoln</option>
+		<option value="Little Rock">Little Rock</option>
+		<option value="Madison">Madison</option>
+		<option value="Montgomery">Montgomery</option>
+		<option value="Montpelier">Montpelier</option>
+		<option value="Nashville">Nashville</option>
+		<option value="Oklahoma City">Oklahoma City</option>
+		<option value="Olympia">Olympia</option>
+		<option value="Phoenix">Phoenix</option>
+		<option value="Pierre">Pierre</option>
+		<option value="Providence">Providence</option>
+		<option value="Raleigh">Releigh</option>
+		<option value="Richmond">Richmond</option>
+		<option value="Sacramento">Sacramento</option>
+		<option value="Saint Paul">Saint Paul</option>
+		<option value="Salem">Salem</option>
+		<option value="Salt Lake City">Salt Lake City</option>
+		<option value="Santa Fe">Santa Fe</option>
+		<option value="Springfield">Springfield</option>
+		<option value="Tallahassee">Tallahassee</option>
+		<option value="Topeka">Topeka</option>
+		<option value="Trenton">Trenton</option>
+		<option value="Washington">Washington</option>
+	</select>
+
+
+
+<input type="button" value="Go!" onClick="return start();">
+
+
+
+
+</form>
+</fieldset>
+
+
+<br>
+<br>
+
+<fieldset>
+	<div id="results"> </div>
+</fieldset>
+
+
+
+
+</body>
+</html>
