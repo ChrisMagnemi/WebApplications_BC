@@ -1,0 +1,33 @@
+body {
+	background-color: #413839;	
+	 background-image: url("pugs in snow.jpg");
+	 background-repeat: repeat-y;
+	 background-position: right top;
+}
+
+fieldset{
+	background-color: #56A5EC;
+	width: 60%;
+	//color: grey;
+	padding: 15px;
+	border: 5;
+	Color: white;
+	text-align: center;
+	
+}
+
+h1 {
+	color: grey;
+}
+
+legend {
+	color:black;
+	background-color: White;
+	padding:6px;
+}
+
+#cold {
+	display: block;
+	 margin-left: auto;
+     margin-right: auto;
+	}

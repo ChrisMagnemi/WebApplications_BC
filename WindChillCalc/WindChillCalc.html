@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8" />
+     <link rel="stylesheet" type="text/css" href="Windchill_css.css">
+     <script type="text/javascript" src="WindChill.js"></script>
+     <title>Windchill Calculator</title>
+     
+    
+</head>
+<body>
+
+<h1> Windchill Calculator </h1>
+	<form method="post" onSubmit="return compute();">
+ 		<fieldset>
+   		  	<legend>Calculator</legend>
+     	
+     	
+  		   	Temperature in degrees Fahrenheit:<input id="temp" type="text" name="Temperature"  />
+  		   	<br>
+  		   	<br>
+     		Wind Speed in miles per hour:<input id="ws" type="text" name="Wind Speed" />
+     		<br>
+     		<br>
+     		<input type="Submit" value="Calculate the Windchill!"/>	
+     	
+    	 </fieldset>
+     
+     
+   	     <fieldset>
+   
+   			<legend>Results</legend>
+   			<div id="output">
+   			</div>
+  	 		<br>
+  	 		
+  
+    	 </fieldset>
+    	
+    	 <img src="pugJacket.jpg" id="cold">
+
+
+	  </form>
+
+</body>
+</html>
